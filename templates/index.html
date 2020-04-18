@@ -1,0 +1,459 @@
+{% extends "partials/base.html" %}
+
+{% load static %}
+
+    {% block header %}
+    {% include "partials/header.html" %}
+    {% endblock header %}
+
+
+    <!-- banner Begins -->
+    {% block content %}
+
+    <div id="owl-demo" class="owl-carousel owl-theme">
+
+        <div class="item">
+            <div class="banner-content ">
+                <img src="{% static 'images/b1.jpg' %}">
+                <div class="centered  hidden-xs">
+                    <div class="shd-box">
+                        <h1>I AM A SPECIALIST IN <br> <span class="brown">CORPORATE & TAX</span> LAW</h1>
+                        <p>I am a licensed advocate by profession, Specialized in <br>Corporate and Tax law firm. I believe in high professional <br>ethics and provide quality legal services in an affordable price.</p><br><br>
+                        <a href=""><button class="button3">Learn More</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="banner-content ">
+                <img src="{% static 'images/b3.jpg' %}">
+                <div class="centered  hidden-xs">
+                    <div class="shd-box">
+                        <h1>I AM A SPECIALIST IN <br> <span class="brown">CORPORATE & TAX</span> LAW</h1>
+                        <p>I am a licensed advocate by profession, Specialized in <br>Corporate and Tax law firm. I believe in high professional <br>ethics and provide quality legal services in an affordable price.</p><br><br>
+                        <a href=""><button class="button3">Learn More</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="banner-content ">
+                <img src="{% static 'images/b2.jpg' %}">
+                <div class="centered  hidden-xs">
+                    <div class="shd-box">
+                        <h1>I AM A SPECIALIST IN <br> <span class="brown">CORPORATE & TAX</span> LAW</h1>
+                        <p>I am a licensed advocate by profession, Specialized in <br>Corporate and Tax law firm. I believe in high professional <br>ethics and provide quality legal services in an affordable price.</p><br><br>
+                        <a href=""><button class="button3">Learn More</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- banner ends -->
+
+    <!-- Home Starts -->
+
+    <div class="three">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="brown-box">
+                        <h1>Request A Quote</h1>
+                    </div>
+
+                    <div class="cus-form">
+
+                        <div class="reservo3">
+                            <p class="plz_red">
+
+                                <!-- Here was a php code for form-->
+
+                            </p>
+
+                            <form class="form-horizontal" role="form" action="./quote_send" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+
+
+                                    <div class="col-sm-10">
+
+                                        <input type="text" name="name" class="form-control" id="inputEmail3" placeholder="Name">
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+
+                                    <div class="col-sm-10">
+
+                                        <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+
+                                    <div class="col-sm-10">
+
+                                        <input type="tel" class="form-control" name="phone" id="inputsubject" placeholder="Phone no">
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+
+                                    <div class="col-sm-10">
+
+                                        <textarea class="form-control" rows="5" name="message" placeholder="Message"></textarea>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Send a Message</button>
+                                </div>
+
+                            </form>
+                            <div class="clearfix"></div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-md-6"></div>
+
+                <div class="col-md-6 pepe" data-aos="fade-down">
+                    <div class="col-sm-3" style="margin-top: 20px;">
+                        <img src="{% static 'images/icon1.png' %}" width="100">
+                    </div>
+                    <div class="col-sm-9">
+                        <h1>Corporate Law</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <a href="{% url 'about' %}">Read More &nbsp;<i class="fa fa-long-arrow-right pepei"></i></a>
+                    </div>
+
+                    <div class="col-sm-3 pepe-sub pepe-go" style="margin-top: 20px;">
+                        <img src="{% static 'images/icon3.png' %}" width="100">
+                    </div>
+                    <div class="col-sm-9 pepe-go">
+                        <h1>Tax Law</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <a href="">Read More&nbsp; <i class="fa fa-long-arrow-right pepei"></i></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="two">
+        <div class="container">
+
+            <h1>Observe more of my works and Updates</h1>
+            <span class="upcase">
+                        I have got all my works informations and articles. Click on the below button to see my Legal Updates.
+                    </span>
+            <br>
+            <a href=""><button class="button3" style="margin-top: 25px;">Go To Updates</button></a>
+        </div>
+
+    </div>
+
+
+    <div class="four">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{% static 'images/s1.jpg' %}" class="img-responsive" data-aos="fade-down">
+                </div>
+                <div class="col-md-6 laca" data-aos="fade-up">
+                    <span>O V E R V I E W</span><br>
+                    <h1>Learned about the Law</h1><br>
+                    <p>I am Shraddha Bhattarai, a licensed advocate by profession, I completed my B.A.(LL.(hons.) degree from one of the top law schools in India and then after worked at Ernst and Young, Banglore as a Tax and Advisory Consultant. I was leading
+                        the tax practice at Gandhi and Associates, a Corporate law firms in the country. And currently I am associated with Ncell Private Limited. <br><br> I was also the council member of US Embassy Youth Council for 2017-18. I was selected
+                        for the Professional Fellows Program for Governance and Society for October-November 2018 which is the US department of state funded program in DC and Arizona.</p><br><br>
+                    <a href=""><button class="button3">Read More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="five">
+        <div class="container">
+            <span>W O R K I N G  &nbsp;  P R O C E S S</span>
+            <h1>My Working Way</h1>
+            <p class="five-p">I got mainly 3 steps as my working process. These process got more success rate and is an <br>professonal way to deal with any law problems.</p>
+
+
+            <div class="row wob">
+
+                <div class="col-md-4 work-box">
+                    <p><span>#1</span> Analyzing Case</p>
+                </div>
+                <div class="col-md-4 work-box">
+                    <p><span>#2</span> Research & Investigation</p>
+                </div>
+                <div class="col-md-4 work-box small">
+                    <p><span>#3</span> Court of Law Success</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="one">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <span>
+                        H E L P &nbsp;  I N T R O
+                    </span>
+                    <h1>Why Choose Me?</h1>
+                    <div class="col-sm-9">
+                        <div class="her1">
+                            <h2>Fight For Justice</h2>
+                            <p>I’m for truth, no matter who tells it. I’m for<br> justice, no matter who its against for.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'images/s3.png' %}" class="him1">
+                    </div>
+
+                    <div class="col-sm-9">
+                        <div class="her2">
+                            <h2>Best Case Strategy</h2>
+                            <p>I work my cases with the best strategy. I<br> use the 3 working process for best result.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <img src="{% static 'images/s4.png' %}" class="him2">
+                    </div>
+
+                    <div class="col-sm-9">
+                        <div class="her3">
+                            <h2>Experienced </h2>
+                            <p>I am experienced in this field and been <br>practicing it for more than 5 years.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'images/s5.png' %}" class=" him3">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'images/s3.jpg' %}" class="img-responsive auba">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="six">
+        <div class="container">
+            <h1>If You are intrested to work with me, Contact me.</h1>
+            <p style="font-weight: lighter;">Contact me for more information and a great law services on Culprit and Tax firm.</p>
+            <a href="./contact"><button class="button3">Contact Me</button></a>
+        </div>
+    </div>
+
+    {% endblock content %}
+
+    <!-- Home Ends -->
+
+    <!-- Footer Starts -->
+
+
+    
+    
+        <!-- Additional Scripts starts -->
+
+            <script type="text/javascript">
+                //Get the button:
+                mybutton = document.getElementById("myBtn");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+            </script>
+        </div>
+    </div>
+
+
+
+    <!-- animation -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+
+            delay: 50, // values from 0 to 3000, with step 50ms
+            duration: 1100, // values from 0 to 3000, with step 50ms
+        });
+    </script>
+
+    <!-- animation close -->
+
+
+
+    <!-- floating social icons -->
+    <script src="{% static 'js/script.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.floating-social-share.js' %}"></script>
+    <script>
+        $("body").floatingSocialShare({
+            buttons: ["facebook", "instagram" /* , "linkedin", "pinterest" */ ],
+            twitter_counter: true,
+            text: "share with: ",
+            url: "http://google.com"
+        });
+    </script>
+
+    <!--  floation icons close -->
+
+    <!--<script src="js/jquery.js"></script>-->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+
+
+            $("#owl-demo1").owlCarousel({
+
+                navigation: true,
+
+                navigationText: ["", ""],
+
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+                items: 1,
+
+                itemsDesktop: [1199, 1],
+
+                itemsDesktopSmall: [979, 1],
+
+                stopOnHover: true,
+
+
+
+
+
+
+            });
+
+
+        });
+    </script>
+
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#owl-demo").owlCarousel({
+
+
+
+                navigation: true,
+
+                slideSpeed: 600,
+
+                paginationSpeed: 500,
+
+                singleItem: true,
+
+                autoPlay: true,
+
+                stopOnHover: true,
+
+                navigationText: ["<", ">"],
+
+                transitionStyle: "fade",
+
+
+
+                /*
+
+                transitionSty1le : "fade"
+
+                transitionStyle : "backSlide"
+
+                transitionStyle : "goDown"
+
+                transitionStyle : "fadeUp"
+
+                */
+
+            });
+
+            $("#owl-demo2").owlCarousel({
+                navigation: true,
+
+                navigationText: ["<", ">"],
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items: 6,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 2],
+                stopOnHover: true,
+
+
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $('.count').each(function() {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function(now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+
+    <!-- Additional Scripts Ends-->
+
+
+    {% block footer %}
+    {% include "partials/footer.html" %}
+    {% endblock footer %}  

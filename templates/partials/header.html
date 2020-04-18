@@ -1,0 +1,42 @@
+
+{% load static %}
+
+<div data-spy="affix" data-offset-top="50">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <a href="./"><img src="{% static 'images/logo1.png' %}" style="position: absolute; z-index: 1; width: 150px;"></a>
+                </div>
+                <div class="col-sm-8">
+                    <a href="tel:+9779802100104" style="text-decoration:none;">
+                        <h2 class="taptocall center-block visible-xs text-center"><i class="fa fa-phone" aria-hidden="true"></i> Tap To Call</h2>
+                    </a>
+
+                    <nav id="menu">
+                        <label for="tm" id="toggle-menu">Menu <span class="drop-icon">▾</span></label>
+                        <input type="checkbox" id="tm">
+                        <ul class="main-menu clearfix">
+                            <li><a href=''>Home</a></li>
+                            <li><a href=''>About Me</a>
+                            </li>
+                            <li><a href="#">Services <i class="fa fa-angle-down" aria-hidden="true"></i> <span
+                                        class="drop-icon">▾</span> <label title="Toggle Drop-down" class="drop-icon"
+                                        for="sm1">▾</label></a>
+                                <input type="checkbox" id="sm1">
+                                <ul class="sub-menu">
+
+                                    <li><a href="">Corporate Law</a></li>
+                                    <li><a href="">Tax law</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=''>Legal Updates</a></li>
+                            <li><a href=''>Gallery</a></li>
+                            <li><a href=''>Contact</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
