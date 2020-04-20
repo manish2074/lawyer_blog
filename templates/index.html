@@ -150,7 +150,7 @@
                     <div class="col-sm-9">
                         <h1>Corporate Law</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <a href="{% url 'about' %}">Read More &nbsp;<i class="fa fa-long-arrow-right pepei"></i></a>
+                        <a href="{% url 'corporate_law' %}" target="_blank">Read More &nbsp;<i class="fa fa-long-arrow-right pepei"></i></a>
                     </div>
 
                     <div class="col-sm-3 pepe-sub pepe-go" style="margin-top: 20px;">
@@ -159,7 +159,7 @@
                     <div class="col-sm-9 pepe-go">
                         <h1>Tax Law</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <a href="">Read More&nbsp; <i class="fa fa-long-arrow-right pepei"></i></a>
+                        <a href="{% url 'tax_law' %}" target="_blank">Read More&nbsp; <i class="fa fa-long-arrow-right pepei"></i></a>
                     </div>
 
                     <div class="clearfix"></div>
@@ -176,7 +176,7 @@
                         I have got all my works informations and articles. Click on the below button to see my Legal Updates.
                     </span>
             <br>
-            <a href=""><button class="button3" style="margin-top: 25px;">Go To Updates</button></a>
+            <a href="{% url 'legal_updates' %}" target="_blank"><button class="button3" style="margin-top: 25px;">Go To Updates</button></a>
         </div>
 
     </div>
@@ -273,7 +273,7 @@
         <div class="container">
             <h1>If You are intrested to work with me, Contact me.</h1>
             <p style="font-weight: lighter;">Contact me for more information and a great law services on Culprit and Tax firm.</p>
-            <a href="./contact"><button class="button3">Contact Me</button></a>
+            <a href="{% url 'contact' %}" target="_blank"><button class="button3">Contact Me</button></a>
         </div>
     </div>
 

@@ -33,15 +33,15 @@
                     </p>
 
 
-                    <form class="form-horizontal" role="form" action="./contact_send" method="post" enctype="multipart/form-data">
-
+                    <form class="form-horizontal" role="form" action="." method='POST'>
+                        {% csrf_token %}
                         <div class="form-group">
 
                             <label for="inputName" class="col-sm-2">Name</label>
 
                             <div class="col-sm-10">
 
-                                <input type="text" name="name" class="form-control ggg" id="inputName" placeholder="Name">
+                                <input type="text" name="name" class="form-control ggg" id="inputName" placeholder="Name" required>
 
                             </div>
 
@@ -53,7 +53,7 @@
 
                             <div class="col-sm-10">
 
-                                <input type="email" name="email" class="form-control ggg" id="inputEmail3" placeholder="Email">
+                                <input type="email" name="email" class="form-control ggg" id="inputEmail3" placeholder="Email" required>
 
                             </div>
 
@@ -65,7 +65,7 @@
 
                             <div class="col-sm-10">
 
-                                <input type="tel" class="form-control ggg" name="phone" id="inputphone" placeholder="Phone no">
+                                <input type="tel" class="form-control ggg" name="phone" id="inputphone" placeholder="Phone no" required>
 
                             </div>
 
@@ -77,7 +77,7 @@
 
                             <div class="col-sm-10">
 
-                                <input type="text" class="form-control ggg" name="subject" id="inputsubject" placeholder="Subject">
+                                <input type="text" class="form-control ggg" name="subject" id="inputsubject" placeholder="Subject" required>
 
                             </div>
 
@@ -89,7 +89,7 @@
 
                             <div class="col-sm-10">
 
-                                <textarea class="form-control ggg" rows="5" name="message" placeholder="Your Message Here...."></textarea>
+                                <textarea class="form-control ggg" rows="5" name="message" placeholder="Your Message Here...." required></textarea>
 
                             </div>
 

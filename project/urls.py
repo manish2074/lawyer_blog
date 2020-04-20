@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
-from legal_updates.views import home,about
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',home,name='home'),
-    path('about/',about,name='about'),
+    path('',include('core.urls')),
+    path('',include('gallery.urls')), 
+    path('',include('contact.urls')), 
+    path('',include('legal_updates.urls'))  
 
 ]
 
