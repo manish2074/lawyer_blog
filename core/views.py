@@ -13,3 +13,9 @@ def tax_law(request):
 
 def corporate_law(request):
     return render(request,'corporate-law.html') 
+
+def error_404_view(request,exception):
+    return render(request,'404.html')  
+
+def error_500_view(request):
+    return render(request,'500.html')  

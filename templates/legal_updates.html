@@ -21,49 +21,23 @@
                         <div class="container" style="text-align:center; margin-bottom: 40px;">
                             <h4 class="heading">Legal Updates</h4>
                         </div>
-
+                        {% for legal in legal %}
+                        {% if forloop.counter <= 3 %}
                         <div class="col-md-4">
                             <div class="ba-box" data-aos="fade-up">
-                                <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
+                                <h4 style="font-size: 23px;">{{legal.title}}</h4>
+                                <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;{{legal.created_date}}<br></p>
                                 <hr>
-                                <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.....</p>
-                                <a href="./article1"><button class="button11">Read More</button></a>
+                                <p class="pbs">{{legal.story|truncatechars:364}}</p>
+                                <a href="{{legal.get_absolute_url}}"><button class="button11">Read More</button></a>
                             </div>
+                        </div>                         
+                        
+                        {% endif %}
+                        {% endfor %}
+                     
 
 
-
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="ba-box" data-aos="fade-up">
-                                <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
-                                <hr>
-                                <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.....</p>
-                                <a href="./article1"><button class="button11">Read More</button></a>
-
-                            </div>
-
-
-
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="ba-box" data-aos="fade-up">
-                                <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
-                                <hr>
-                                <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.....</p>
-                                <a href="./article1"><button class="button11">Read More</button></a>
-                            </div>
-
-
-
-                        </div>
 
 
 
@@ -74,49 +48,21 @@
                         <div class="container" style="text-align:center; margin-bottom: 40px;">
                         </div>
 
+                        {% for legal in legal %}
+                        {% if forloop.counter > 3 %}
                         <div class="col-md-4">
                             <div class="ba-box" data-aos="fade-up">
-                                <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
+                                <h4 style="font-size: 23px;">{{legal.title}}</h4>
+                                <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;{{legal.created_date}}<br></p>
                                 <hr>
-
-                                <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.....</p>
-                                <a href="./article1"><button class="button11">Read More</button></a>
+                                <p class="pbs">{{legal.story|truncatechars:364}}</p>
+                                <a href="{{legal.get_absolute_url}}"><button class="button11">Read More</button></a>
                             </div>
-
-
-
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="ba-box" data-aos="fade-up">
-                                <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
-                                <hr>
-                                <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.....</p>
-                                <a href="./article1"><button class="button11">Read More</button></a>
-
-                            </div>
-
-
-
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="ba-box" data-aos="fade-up">
-                                <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
-                                <hr>
-                                <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.....</p>
-                                <a href="./article1"><button class="button11">Read More</button></a>
-                            </div>
-
-
-
-                        </div>
+                        </div>                         
+                        
+                        {% endif %}
+                        {% endfor %}
+                     
                     </div>
                 </div>
 
@@ -175,58 +121,26 @@
                         <div class="container" style="text-align:center; margin-bottom: 40px;">
                             <h4 class="heading">My Events</h4>
                         </div>
-
+                        {% for events in events %}
+                        {% if forloop.counter <= 3 %}
                         <div class="col-md-4">
                             <div class="bb-box" data-aos="fade-up">
                                 <div class="img-fixed">
-                                    <img src="{% static 'images/b1.jpg' %}" class="img-responsive">
+                                    <img src="{{events.image.url}}" class="img-responsive">
                                 </div>
                                 <div class="contain">
-                                    <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                    <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
+                                    <h4 style="font-size: 23px;">{{events.title}}</h4>
+                                    <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;{{events.created_date}}<br></p>
                                     <hr>
-                                    <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                        to make a type specimen book....</p>
-                                    <a href="./article2"><button class="button11">Read More</button></a>
+                                    <p class="pbs">{{events.story|truncatechars:364}}</p>
+                                    <a href="{{events.get_absolute_url}}"><button class="button11">Read More</button></a>
                                 </div>
                             </div>
-                        </div>
+                        </div>                          
+                        {% endif %}
+                      
+                        {% endfor %}
 
-
-
-                        <div class="col-md-4">
-                            <div class="bb-box" data-aos="fade-up">
-                                <div class="img-fixed">
-                                    <img src="{% static 'images/landscaping.jpg' %}" class="img-responsive">
-                                </div>
-                                <div class="contain">
-                                    <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                    <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
-                                    <hr>
-                                    <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                        to make a type specimen book....</p>
-                                    <a href="./article2"><button class="button11">Read More</button></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-md-4">
-                            <div class="bb-box" data-aos="fade-up">
-                                <div class="img-fixed">
-                                    <img src="{% static 'images/small1.jpg' %}" class="img-responsive">
-                                </div>
-                                <div class="contain">
-                                    <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                    <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
-                                    <hr>
-                                    <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                        to make a type specimen book....</p>
-                                    <a href="./article2"><button class="button11">Read More</button></a>
-                                </div>
-                            </div>
-                        </div>
 
 
 
@@ -235,59 +149,26 @@
 
                         <div class="container" style="text-align:center; margin-bottom: 40px;">
                         </div>
-
+                        {% for events in events %}
+                        {% if forloop.counter > 3 %}
                         <div class="col-md-4">
                             <div class="bb-box" data-aos="fade-up">
                                 <div class="img-fixed">
-                                    <img src="{% static 'images/landscaping.jpg' %}" class="img-responsive">
+                                    <img src="{{events.image.url}}" class="img-responsive">
                                 </div>
                                 <div class="contain">
-                                    <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                    <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
+                                    <h4 style="font-size: 23px;">{{events.title}}</h4>
+                                    <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;{{events.created_date}}<br></p>
                                     <hr>
-                                    <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                        to make a type specimen book....</p>
-                                    <a href="./article2"><button class="button11">Read More</button></a>
+                                    <p class="pbs">{{events.story|truncatechars:364}}</p>
+                                    <a href="{{events.get_absolute_url}}"><button class="button11">Read More</button></a>
                                 </div>
                             </div>
-                        </div>
+                        </div>                          
+                        {% endif %}
+                      
+                        {% endfor %}
 
-
-
-                        <div class="col-md-4">
-                            <div class="bb-box" data-aos="fade-up">
-                                <div class="img-fixed">
-                                    <img src="{% static 'images/landscaping.jpg' %}" class="img-responsive">
-                                </div>
-                                <div class="contain">
-                                    <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                    <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
-                                    <hr>
-                                    <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                        to make a type specimen book....</p>
-                                    <a href="./article2"><button class="button11">Read More</button></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                        <div class="col-md-4">
-                            <div class="bb-box" data-aos="fade-up">
-                                <div class="img-fixed">
-                                    <img src="{% static 'images/landscaping.jpg' %}" class="img-responsive">
-                                </div>
-                                <div class="contain">
-                                    <h4 style="font-size: 23px;">Lorem Ipsum Dolor</h4>
-                                    <p class="pas"><i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;17 January, 2020<br></p>
-                                    <hr>
-                                    <p class="pbs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                        to make a type specimen book....</p>
-                                    <a href="./article2"><button class="button11">Read More</button></a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
